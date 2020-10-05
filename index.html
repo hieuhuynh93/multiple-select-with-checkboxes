@@ -1,0 +1,30 @@
+<!-- Source: http://www.1stwebdesigns.com/blog/development/multiple-select-with-checkboxes-and-jquery -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>Multiple select</title>
+        <link rel="stylesheet" type="text/css" href="multi.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="multi.js"></script>
+    </head>
+    <body>
+        <div class="multiselect">
+            <label><input type="checkbox" name="option[]" value="1" />Green</label>
+            <label><input type="checkbox" name="option[]" value="2" />Red</label>
+            <label><input type="checkbox" name="option[]" value="3" />Blue</label>
+            <label><input type="checkbox" name="option[]" value="4" />Orange</label>
+            <label><input type="checkbox" name="option[]" value="5" />Purple</label>
+            <label><input type="checkbox" name="option[]" value="6" />Black</label>
+            <label><input type="checkbox" name="option[]" value="7" />White</label>
+        </div>
+
+        <script>
+          $(function() {
+               $(".multiselect").multiselect();
+          });
+        </script>
+     </body>
+</html>
